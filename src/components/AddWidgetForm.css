@@ -1,0 +1,39 @@
+.custom-modal {
+    position: fixed;
+    top: 10px; /* Adjust the top margin */
+    right: 10px; /* Adjust the right margin */
+    height: 400px; /* Fixed height */
+    width: 300px; /* Fixed width */
+    border-radius: 8px;
+    z-index: 1050;
+}
+
+.custom-modal .modal-content {
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-modal .modal-header,
+.custom-modal .modal-body,
+.custom-modal .modal-footer {
+    padding: 10px 15px;
+}
+
+.custom-modal .modal-title {
+    font-size: 18px;
+}
+
+.custom-modal .form-control {
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.custom-modal .btn {
+    border-radius: 4px;
+}
+
+.custom-modal .d-flex {
+    justify-content: space-between;
+}

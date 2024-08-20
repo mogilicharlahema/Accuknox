@@ -1,0 +1,113 @@
+/* Base styles for Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distributes space between elements */
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+  
+    height: 50px; /* Set fixed height */
+  }
+  
+  .dashboard_text {
+    font-size: 20px;
+    margin-left: 20px; /* Remove default margin */
+    flex: 1; /* Allows text to take available space */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .search {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin: 0 20px; /* Adjust spacing as needed */
+    width: 200px; /* Adjust width as needed */
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align icons and buttons to the right */
+  }
+  
+  .add-widget {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: none;
+    background-color:white;
+    color: black;
+    cursor: pointer;
+    margin-right: 10px; /* Space between buttons and icons */
+  }
+  
+  .icon-button {
+    border: none;
+    background-color:white;
+    margin: 0 5px; /* Space between icons */
+    border-radius: 3px;
+  }
+  
+  .retry, .dots {
+    width: 24px; /* Adjust width if needed */
+    height: auto;
+    
+  }
+  
+  .timer {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color:white;
+    color: rgb(12, 12, 150);
+    margin-left: 10px; /* Space between icons and timer button */
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .search {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .icons {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .add-widget, .timer {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .retry, .dots {
+      width: 20px; /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 10px;
+    }
+  
+    .dashboard_text {
+      font-size: 18px;
+    }
+  
+    .search {
+      padding: 8px;
+    }
+  
+    .add-widget, .timer {
+      padding: 8px;
+    }
+  
+    .retry, .dots {
+      width: 16px; /* Further adjust for very small screens */
+    }
+  }
+  
